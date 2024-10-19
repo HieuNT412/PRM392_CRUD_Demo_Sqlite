@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/black"
+        android:text="Product management"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnToCreate"
+        android:layout_below="@id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Insert"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/btnToCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+
+
+</RelativeLayout>
